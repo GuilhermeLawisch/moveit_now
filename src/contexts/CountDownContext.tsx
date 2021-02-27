@@ -1,5 +1,4 @@
-import { useState, useEffect, useContext,createContext, ReactNode } from 'react';
-import { NodeJS } from 'node';
+import { useState, useEffect, useContext, createContext, ReactNode } from 'react';
 import { ChallengesContext } from './ChallengesContext';
 
 interface CountDownContextData {
@@ -15,7 +14,7 @@ interface CountDownProviderProps {
   children: ReactNode;
 }
 
-let countdownTimeout: NodeJS, Timeout;
+let countdownTimeout: NodeJS.Timeout
 
 export const CountDownContext = createContext({} as CountDownContextData)
 
